@@ -39,6 +39,8 @@ connectDb()
     });
   })
   .catch((error) => {
-    console.error("Database connection failed", error);
+    console.error("Application startup failed before the server could listen.");
+    console.error("Check your environment variables, especially MONGO_URI and CLIENT_URL.");
+    console.error(error);
     process.exit(1);
   });
