@@ -54,6 +54,14 @@ server/   Express + MongoDB backend
 - Build command: `npm install`
 - Start command: `npm start`
 - Environment variables: `MONGO_URI`, `JWT_SECRET`, `PORT`, `CLIENT_URL`
+- Optional: use the included `render.yaml` blueprint to create both the backend web service and the frontend static site with the correct root directories.
+
+### Render root deploy fallback
+
+- If you deploy the repository root as a single Render web service, use:
+- Build command: `npm install`
+- Start command: `npm start`
+- This starts the backend directly with `node server/src/server.js`
 
 ## Notes
 

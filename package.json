@@ -11,6 +11,6 @@
     "dev:client": "npm --workspace client run dev",
     "dev:server": "npm --workspace server run dev",
     "build": "npm --workspace client run build",
-    "start": "npm --workspace server start"
+    "start": "node server/src/server.js"
   }
 }
